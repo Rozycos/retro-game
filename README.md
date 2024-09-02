@@ -37,3 +37,4 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
 
 1. npx create-next-app@latest
 2. npm install --save-dev sass
+3. fonts: Press Start 2P, VT323, Pixelify Sans, Tiny5, 
