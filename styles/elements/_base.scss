@@ -1,0 +1,147 @@
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-family: $font-ubuntu;
+ }
+
+.container {
+    width: 100vw;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 1rem;
+    
+    // &__fixed{
+    //     min-width: 18.75rem;
+    //     margin: 0 auto;
+    // }
+
+    &--section1-bg {
+        position: relative;
+        height: 100vh;
+        background: url('../../public/images/bg1.png');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        z-index: 0;
+        &::after{
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            width: 70vw;
+            height: 70vw;
+            background: url('../../public/images/frame1.webp') no-repeat;
+            background-size: contain;
+            background-position: top center;
+            transform: translate(-50%, 65%) rotate(0deg);
+            clip-path: inset(0 0 65% 0);
+            z-index: -1;
+        }
+    }
+    
+    &--section2-bg {
+        position: relative;
+        height: 100vh;
+        background: url('../../public/images/bg3.png');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        z-index: 0;
+        &::after{
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            width: 70vw;
+            height: 70vw;
+            background: url('../../public/images/frame1.webp') no-repeat;
+            background-size: contain;
+            background-position: top center;
+            transform: translate(-50%, 65%) rotate(90deg);
+            clip-path: inset( 0 65% 0 0);
+            z-index: -1;
+        }
+    }
+    
+    &--section3-bg {
+        position: relative;
+        height: 100vh;
+        background: url('../../public/images/bg4.png');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        z-index: 0;
+        &::after{
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            width: 70vw;
+            height: 70vw;
+            background: url('../../public/images/frame1.webp') no-repeat;
+            background-size: contain;
+            background-position: top center;
+            transform: translate(-50%, 65%) rotate(180deg);
+            clip-path: inset( 65% 0 0 0);
+            z-index: -1;
+        }
+    }
+    
+    &--section4-bg {
+        position: relative;
+        height: 100vh;
+        background: url('../../public/images/bg6.png');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        z-index: -1;
+        overflow: hidden;
+        &::after{
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            width: 70vw;
+            height: 70vw;
+            background: url('../../public/images/frame1.webp') no-repeat;
+            background-size: contain;
+            background-position: top center;
+            transform: translate(-50%, 65%) rotate(270deg);
+            clip-path: inset( 0 0 0 65% );
+            z-index: -1;
+        }
+    }
+    
+    &--section5-bg {
+        position: relative;
+        height: 100vh;
+        background: url('../../public/images/bg8.png');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        z-index: -1;
+        overflow: hidden;
+        &::after{
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            width: 70vw;
+            height: 70vw;
+            background: url('../../public/images/frame1.webp') no-repeat;
+            background-size: contain;
+            background-position: top center;
+            transform: translate(-50%, 65%) rotate(0deg);
+            clip-path: inset(0 0 65% 0);
+            z-index: -1;
+            
+        }
+    }
+}
+
+.hide{
+    display: none;
+}
