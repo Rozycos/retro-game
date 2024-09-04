@@ -4,12 +4,14 @@ import { useState, useEffect } from "react";
 export default function Loader({dots, time, initialText, finalText}) {
     const [dotCount, setDotCount] = useState(0);
     const [loadingText, setLoadingText] = useState(initialText);
+    const [loadingDots, setLoadingDots] = useState('.')
 
     useEffect(() => {
         const interval = setInterval(() => {
             if (dotCount < dots) {
                 setDotCount(prevCount => prevCount + 1);
-                setLoadingText(prevText => prevText + '.');
+                //setLoadingText(prevText => prevText + '.');
+                setLoadingDots(prevDots => prevDots + '.');
             } else {
                 setLoadingText(finalText);
                 clearInterval(interval);
@@ -20,9 +22,10 @@ export default function Loader({dots, time, initialText, finalText}) {
     }, [dotCount]);
 
     return (
-        <div className="container loader">
-		    <div className="loader__message">{loadingText}</div>
-	    </div>
+        <main className="loader">
+		    <div className="loader__message loader__message--dual-color">{loadingText}</div>
+            <div className="loader__message loader__message--dots">{loadingDots}</div>
+	    </main>
     );
 }
 

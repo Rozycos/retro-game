@@ -1,6 +1,6 @@
 /* Generic */
 @import "generic/reset";
-//@import "generic/print";
+@import "generic/box-sizing";
 
 /* Settings */
 //@import "settings/index";
@@ -8,7 +8,7 @@
 //@import "settings/colors";
  
 /* Elements */
-//@import "elements/fonts";
+@import "elements/loader";
 //@import "elements/base";
 //@import "elements/scrollIcon";
 //@import "elements/arrowsIcon";

@@ -9,7 +9,7 @@ export default function AboutMePage() {
             ThisComponentTime={2000}
             FirstComponent={Loader} 
             SecondComponent={AboutMe} 
-            firstComponentProps={{dots:6, time:200, initialText:'Loading', finalText:'Done'}} 
+            firstComponentProps={{dots:28, time:50, initialText:'Initializing world', finalText:'Done'}} 
             secondComponentProps={''} 
       />
     );
