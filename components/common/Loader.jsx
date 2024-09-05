@@ -23,7 +23,7 @@ export default function Loader({dots, time, initialText, finalText}) {
 
     return (
         <main className="loader">
-		    <div className="loader__message loader__message--dual-color">{loadingText}</div>
+		    <div className="loader__message dual-color-text">{loadingText}</div>
             <div className="loader__message loader__message--dots">{loadingDots}</div>
 	    </main>
     );

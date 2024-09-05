@@ -1,4 +1,7 @@
-$font-ubuntu: 'Ubuntu Mono', monospace; //main font
-$font-pixelify: 'Pixelify Sans', sans-serif; //secondary font
+//$font-ubuntu: 'Ubuntu Mono', monospace; //main font
+//$font-pixelify: 'Pixelify Sans', sans-serif; //secondary font
 // $font-varela: 'Varela', sans-serif; //title font for slider
 // $logo-font: 'Croissant One', cursive; //logo font
+
+$font-pixelify: var(--font-pixelify_sans);;
+$font-press-start: var(--font-press_start_2p);
