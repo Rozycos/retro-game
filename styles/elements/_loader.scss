@@ -13,13 +13,18 @@
 }
 
 .loader__message {
-	width: 18.75rem;
+	//width: 18.75rem;
+    width: 580px;
     //font-family: $font-pixelify;
     font-family: $font-press-start;
-	font-size: 1rem;
+	font-size: 2rem;
 	//font-weight: bold;
 	text-transform: uppercase;
     color: $color-white;
+    @include mobile{
+        width: 300px;
+        font-size: 1rem;
+    }
 	
     
     &--dots {

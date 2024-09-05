@@ -12,7 +12,7 @@ export default function Home() {
         <li><Link href="/experience">Experience</Link></li>
         <li><Link href="/contact">Contact</Link></li>
       </ul>
-      <Loader dots='6' time='250' initialText='Loading' finalText='Done'/>
+      <Loader dots='17' time='50' initialText='Initializing world' finalText='Initializing world'/>
       
     </>  
   );
