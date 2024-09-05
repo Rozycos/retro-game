@@ -26,7 +26,6 @@ export default function Loader({dots, time, initialText, finalText}) {
         <main className="loader">
 		    <div className="loader__message dual-color-text">{loadingText}</div>
             <div className="loader__message loader__message--dots">{loadingDots}</div>
-            <Button text='start'/>
 	    </main>
     );
 }

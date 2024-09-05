@@ -1,12 +1,12 @@
 "use client"
 
 import Button from "@/components/common/Button"
+import LevelLoader from "@/components/common/LevelLoader"
 
 export default function AboutMe () {
     return(
         <>
-            <h1>About me component</h1>
-            <Button />
+            <LevelLoader/>
         </>
     )
 }
