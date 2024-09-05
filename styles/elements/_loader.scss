@@ -13,17 +13,17 @@
 }
 
 .loader__message {
-	//font-family: $font-pixelify;
+	width: 18.75rem;
+    //font-family: $font-pixelify;
     font-family: $font-press-start;
 	font-size: 1rem;
 	//font-weight: bold;
 	text-transform: uppercase;
-    color: white;
-	width: 300px;
+    color: $color-white;
+	
     
     &--dots {
         text-align:left;
-        //color: white;
     }
 
     // &::before{

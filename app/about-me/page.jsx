@@ -6,11 +6,11 @@ import Loader from "@/components/common/Loader";
 export default function AboutMePage() {
     return (
         <TimedComponentSwitcher 
-            ThisComponentTime={2000}
+            ThisComponentTime={1100}
             FirstComponent={Loader} 
             SecondComponent={AboutMe} 
-            firstComponentProps={{dots:28, time:50, initialText:'Initializing world', finalText:'Done'}} 
+            firstComponentProps={{dots:18, time:50, initialText:'Initializing world', finalText:'Done'}} 
             secondComponentProps={''} 
       />
     );
-}
+}   
