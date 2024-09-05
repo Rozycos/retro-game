@@ -1,5 +1,6 @@
 "use client"
 import { useState, useEffect } from "react";
+import Button from "./Button";
 
 export default function Loader({dots, time, initialText, finalText}) {
     const [dotCount, setDotCount] = useState(0);
@@ -25,6 +26,7 @@ export default function Loader({dots, time, initialText, finalText}) {
         <main className="loader">
 		    <div className="loader__message dual-color-text">{loadingText}</div>
             <div className="loader__message loader__message--dots">{loadingDots}</div>
+            <Button text='start'/>
 	    </main>
     );
 }

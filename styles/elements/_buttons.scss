@@ -1,0 +1,88 @@
+button {
+    background: none; /* Usuwa domyślne tło */
+    border: none; /* Usuwa domyślną ramkę */
+    padding: 0; /* Usuwa domyślne wewnętrzne odstępy */
+    margin: 0; /* Usuwa domyślne marginesy */
+    font: inherit; /* Dziedziczy czcionkę z rodzica */
+    color: inherit; /* Dziedziczy kolor tekstu */
+    text-align: inherit; /* Dziedziczy wyrównanie tekstu */
+    text-transform: none; /* Usuwa ewentualne wielkie litery */
+    outline: none; /* Usuwa domyślny obrys */
+    box-shadow: none; /* Usuwa domyślny cień */
+    appearance: none; /* Usuwa specyficzne style przycisków na różnych urządzeniach (np. na mobilnych) */
+    cursor: pointer; /* Ustawia kursor wskazujący */
+    &:hover {
+        background-color: #1A1E53;
+        //box-shadow: white;
+    }
+}
+
+.section_8bit {
+    font-size: 1rem;
+	width: 12.5rem;
+    float: left;
+    border-left: .3125rem solid $color-white; //or 10px
+    border-right: .3125rem solid $color-white; //or 10px
+    position: relative;
+	/* font-family: "Pixelify Sans"; */
+	/* font-size: 2rem; */
+	/* text-transform: uppercase; */
+	/* text-align: center; */
+	background-color: #402F5C;
+}
+
+.section_8bit .wrapper {
+    display: block;
+    position: relative;
+    color: $color-white;
+	/* padding: 1.25em; */
+    /* margin: -.3125em 0; */
+    padding: 1.25em; // 40px
+    margin: -.3125em 0; // -10px
+    border-top: .3125rem solid $color-white; // 10px
+    border-bottom: .3125rem solid $color-white; // 10px
+	/* font-family: "Pixelify Sans"; */
+	/* font-size: 2rem; */
+	/* text-transform: uppercase; */
+	/* text-align: center; */
+}
+
+.wrapper{
+	font-family: $font-press-start;
+	font-size: 1em;
+	text-transform: uppercase;
+	text-align: center;
+}
+
+/* Pseudo-elements for corners */
+.section_8bit::before,
+.section_8bit::after,
+.section_8bit .wrapper::before,
+.section_8bit .wrapper::after {
+    content: '';
+    width: .3125em; // 10px
+    height: .3125em; // 10px
+    display: block;
+    position: absolute;
+    background: $color-white;
+}
+
+/* Top corners */
+.section_8bit::before {
+    top: -.15625em; // -5px
+    left: -.15625em; // -5px
+}
+.section_8bit::after {
+    top: -.15625em; // -5px
+    right: -.15625em; // -5px
+}
+
+/* Bottom corners */
+.section_8bit .wrapper::before {
+    bottom: -.15625em; // -5px
+    left: -.15625em; // -5px
+}
+.section_8bit .wrapper::after {
+    bottom: -.15625em; // -5px
+    right: -.15625em; // -5px
+}

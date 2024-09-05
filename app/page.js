@@ -13,6 +13,7 @@ export default function Home() {
         <li><Link href="/contact">Contact</Link></li>
       </ul>
       <Loader dots='6' time='250' initialText='Loading' finalText='Done'/>
+      
     </>  
   );
 }
