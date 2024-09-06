@@ -3,11 +3,11 @@ import React, { useState, useEffect } from 'react';
 import PropTypes from 'prop-types';
 
 export default function TimedComponentSwitcher({ 
-    switchTime,
+    switchTime = 1500,
     FirstComponent,
     SecondComponent,
-    firstComponentProps, 
-    secondComponentProps
+    firstComponentProps = {}, 
+    secondComponentProps = {}
 }) {
     const [showFirstComponent, setShowFirstComponent] = useState(true);
   
@@ -35,13 +35,6 @@ TimedComponentSwitcher.propTypes = {
   SecondComponent: PropTypes.elementType.isRequired, // Drugi komponent do renderowania
   firstComponentProps: PropTypes.object, // Propsy dla pierwszego komponentu
   secondComponentProps: PropTypes.object, // Propsy dla drugiego komponentu
-};
-
-// Domyślne wartości dla niektórych propsów
-TimedComponentSwitcher.defaultProps = {
-  switchTime: 2000,
-  firstComponentProps: {},
-  secondComponentProps: {},
 };
 
 //    how to use: <TimedComponentSwitcher 

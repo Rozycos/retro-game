@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types';
 
-export default function Button({text}) {
+export default function Button({text='start'}) {
     return (
         <button className="section_8bit">
             <div className="wrapper dual-color-text">
@@ -13,11 +13,6 @@ export default function Button({text}) {
 // Walidacja typów właściwości
 Button.propTypes = {
     text: PropTypes.string.isRequired,
-};
-
-// Domyślna wartość dla właściwości
-Button.defaultProps = {
-    text: 'Start',
 };
 
 //usage <Button text='start'/>

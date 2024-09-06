@@ -1,14 +1,14 @@
+/* Settings */
+@import "settings/index";
+//@import "settings/fonts";
+//@import "settings/colors";
+
 /* Generic */
 @import "generic/reset";
 @import "generic/box-sizing";
 @import "generic/typography";
 @import "generic/base";
 
-/* Settings */
-@import "settings/index";
-//@import "settings/fonts";
-//@import "settings/colors";
- 
 /* Elements */
 @import "elements/loader";
 @import "elements/buttons";

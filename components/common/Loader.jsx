@@ -2,7 +2,7 @@
 import { useState, useEffect } from "react";
 import PropTypes from 'prop-types';
 
-export default function Loader({dots, time, initialText, finalText}) {
+export default function Loader({dots=1, time=100, initialText='loading', finalText='done!'}) {
     const [dotCount, setDotCount] = useState(0);
     const [loadingText, setLoadingText] = useState(initialText);
     const [loadingDots, setLoadingDots] = useState('.')
@@ -36,14 +36,6 @@ Loader.propTypes = {
     time: PropTypes.number.isRequired,
     initialText: PropTypes.string.isRequired,
     finalText: PropTypes.string.isRequired,
-};
-
-// Domyślna wartość dla właściwości
-Loader.defaultProps = {
-    dots: 10,
-    time: 250,
-    initialText: 'Loading',
-    finalText: 'Done!',
 };
 
 // How to use: <Loader dots='6' time='250' initialText='Loading' finalText='Done'/>
