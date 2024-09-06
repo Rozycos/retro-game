@@ -1,6 +1,6 @@
 "use client"
 import { useState, useEffect } from "react";
-import Button from "./Button";
+import PropTypes from 'prop-types';
 
 export default function Loader({dots, time, initialText, finalText}) {
     const [dotCount, setDotCount] = useState(0);
@@ -29,5 +29,21 @@ export default function Loader({dots, time, initialText, finalText}) {
 	    </main>
     );
 }
+
+// Walidacja typów właściwości
+Loader.propTypes = {
+    dots: PropTypes.number.isRequired,
+    time: PropTypes.number.isRequired,
+    initialText: PropTypes.string.isRequired,
+    finalText: PropTypes.string.isRequired,
+};
+
+// Domyślna wartość dla właściwości
+Loader.defaultProps = {
+    dots: 10,
+    time: 250,
+    initialText: 'Loading',
+    finalText: 'Done!',
+};
 
 // How to use: <Loader dots='6' time='250' initialText='Loading' finalText='Done'/>

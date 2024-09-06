@@ -1,8 +1,9 @@
 "use client"
 import React, { useState, useEffect } from 'react';
+import PropTypes from 'prop-types';
 
 export default function TimedComponentSwitcher({ 
-    ThisComponentTime,
+    switchTime,
     FirstComponent,
     SecondComponent,
     firstComponentProps, 
@@ -13,10 +14,10 @@ export default function TimedComponentSwitcher({
     useEffect(() => {
       const timer = setTimeout(() => {
         setShowFirstComponent(false);
-      }, ThisComponentTime);
+      }, switchTime);
   
       return () => clearTimeout(timer);
-    }, []);
+    }, [switchTime]);
   
     return (
         <div>
@@ -27,8 +28,24 @@ export default function TimedComponentSwitcher({
     );
   }
 
+// Walidacja typów właściwości
+TimedComponentSwitcher.propTypes = {
+  switchTime: PropTypes.number.isRequired, // Czas przełączenia w ms
+  FirstComponent: PropTypes.elementType.isRequired, // Komponent do renderowania
+  SecondComponent: PropTypes.elementType.isRequired, // Drugi komponent do renderowania
+  firstComponentProps: PropTypes.object, // Propsy dla pierwszego komponentu
+  secondComponentProps: PropTypes.object, // Propsy dla drugiego komponentu
+};
+
+// Domyślne wartości dla niektórych propsów
+TimedComponentSwitcher.defaultProps = {
+  switchTime: 2000,
+  firstComponentProps: {},
+  secondComponentProps: {},
+};
+
 //    how to use: <TimedComponentSwitcher 
-//         ThisComponentTime={1500}
+//         switchTime={1500}
 //         FirstComponent={Comp1} 
 //         SecondComponent={Comp2} 
 //         firstComponentProps={{dots:6, time:200, initialText:'Loading', finalText:'Done'}} 

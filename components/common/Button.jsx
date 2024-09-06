@@ -1,3 +1,5 @@
+import PropTypes from 'prop-types';
+
 export default function Button({text}) {
     return (
         <button className="section_8bit">
@@ -7,5 +9,15 @@ export default function Button({text}) {
         </button>
     )
 }
+
+// Walidacja typów właściwości
+Button.propTypes = {
+    text: PropTypes.string.isRequired,
+};
+
+// Domyślna wartość dla właściwości
+Button.defaultProps = {
+    text: 'Start',
+};
 
 //usage <Button text='start'/>
