@@ -1,18 +1,20 @@
 import PropTypes from 'prop-types';
 
-export default function Button({text='start'}) {
+export default function Button({ text = 'start', secondary = false }) {
+    const buttonClassName = `btn ${secondary ? 'btn--secondary' : ''}`;
+    
     return (
-        <button className="section_8bit">
+        <button className={buttonClassName}>
             <div className="wrapper dual-color-text">
                 {text}
             </div>
         </button>
-    )
+    );
 }
 
-// Walidacja typów właściwości
 Button.propTypes = {
-    text: PropTypes.string.isRequired,
+    text: PropTypes.string,
+    secondary: PropTypes.bool
 };
 
-//usage <Button text='start'/>
+//usage <Button text='start' secondary='true/false'/>
