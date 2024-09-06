@@ -15,6 +15,13 @@ export default function Home() {
       </ul>
       <Loader dots='17' time='50' initialText='Initializing world' finalText='Initializing world'/>
       <Character character='ufo2'/>
+      <Character character='ufo1'/>
+      <Character character='ufo'/>
+      <Character character='scientist'/>
+      <Character character='astronaut'/>
+      <Character character='alien1'/>
+      <Character character='alien2'/>
+      <Character character='alien3'/>
       
     </>  
   );
