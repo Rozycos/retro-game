@@ -1,3 +1,4 @@
+import Character from '@/components/common/Character';
 import Loader from '@/components/common/Loader';
 import Link from 'next/link';
 
@@ -13,6 +14,7 @@ export default function Home() {
         <li><Link href="/contact">Contact</Link></li>
       </ul>
       <Loader dots='17' time='50' initialText='Initializing world' finalText='Initializing world'/>
+      <Character character='ufo2'/>
       
     </>  
   );

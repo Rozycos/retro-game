@@ -1,0 +1,48 @@
+.character {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    
+    &__alien1 {
+        width: 80px;
+        height: 80px;
+        background-image: url(../../public/images/alien1.png);
+    }
+    &__alien2 {
+        width: 80px;
+        height: 80px;
+        background-image: url(../../public/images/alien2.png);
+    }
+    &__alien3 {
+        width: 80px;
+        height: 80px;
+        background-image: url(../../public/images/alien3.png);
+    }
+    &__scientist {
+        width: 108px;
+        height: 297px;
+        background-image: url(../../public/images/scientist.png);
+    }
+    &__astronaut {
+        width: 104px;
+        height: 288px;
+        background-image: url(../../public/images/astronaut.png);
+    }
+    &__ufo {
+        width: 142px;
+        height: 136px;
+        background-image: url(../../public/images/ufo.png);
+    }
+    &__ufo2 {
+        width: 385px;
+        height: 420px;
+        background-image: url(../../public/images/ufo2.png);
+    }
+    &__ufo3 {
+        width: 146px;
+        height: 76px;
+        background-image: url(../../public/images/ufo3.png);
+    }
+}
+
+//usage <Character character='ufo'/> accessible characters: scientist, astronaut, ufo, ufo2, alien1, alien2, alien3
