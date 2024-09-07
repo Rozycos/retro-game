@@ -15,8 +15,8 @@ export default function AboutMe () {
             <main className="level-loader level-loader__container">
                 {/* <nav>Nawigation</nav> */}
                 {/* <section className="level-loader"> */}
-                    <LevelLoader level='level 10' h1='know about me'/>
-                    <Button text='start' secondary={false} onClick={handleClick}/>
+                    <LevelLoader level='level 1' h1='know about me'/>
+                    <Button text='start' secondary={false} destinatioPage ='/about-me/hero'/>
                 {/* </section> */}
             </main>
             ) : (
