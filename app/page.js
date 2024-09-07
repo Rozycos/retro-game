@@ -4,12 +4,14 @@ import Character from '@/components/common/Character';
 import Loader from '@/components/common/Loader';
 import Link from 'next/link';
 
+//todo 1. zdefiniować pseudoelementy w h1
+
 export default function Home() {
   return (
     <div className={styles.container}>
       <header>header</header>
       <main className='main'>
-        <section>
+        <section className='section__welcome'> 
           <h1>
             <p className='dual-color-text'>Welcome</p>
             <p className='dual-color-text'>player1</p>
