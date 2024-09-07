@@ -17,83 +17,9 @@ button {
     }
 }
 
-// .btn {
-//     font-size: 1rem;
-// 	width: 12.5rem;
-//     float: left;
-//     margin: 2rem;
-//     border-left: .3125rem solid $color-white; //or 10px
-//     border-right: .3125rem solid $color-white; //or 10px
-//     position: relative;
-// 	/* font-family: "Pixelify Sans"; */
-// 	/* font-size: 2rem; */
-// 	/* text-transform: uppercase; */
-// 	/* text-align: center; */
-// 	background-color: $color-dark-blue-secondary;
-//     &:hover{
-//         box-shadow: 0px 10px 20px 10px rgb(255 255 255 /30%), 2px -10px 20px 10px rgb(255 255 255 /30%);
-//     }   
-// }
-
-// .btn .wrapper {
-//     display: block;
-//     position: relative;
-//     color: $color-white;
-//     /* padding: 1.25em; */
-//     /* margin: -.3125em 0; */
-//     padding: 1.25em; // 40px
-//     margin: -.3125em 0; // -10px
-//     border-top: .3125rem solid $color-white; // 10px
-//     border-bottom: .3125rem solid $color-white; // 10px
-// 	/* font-family: "Pixelify Sans"; */
-// 	/* font-size: 2rem; */
-// 	/* text-transform: uppercase; */
-// 	/* text-align: center; */
-// }
-
-// .wrapper{
-// 	font-family: $font-press-start;
-// 	font-size: 1em;
-// 	text-transform: uppercase;
-// 	text-align: center;
-// }
-
-// /* Pseudo-elements for corners */
-// .btn::before,
-// .btn::after,
-// .btn .wrapper::before,
-// .btn .wrapper::after {
-//     content: '';
-//     width: .3125em; // 10px
-//     height: .3125em; // 10px
-//     display: block;
-//     position: absolute;
-//     background: $color-white;
-// }
-
-// /* Top corners */
-// .btn::before {
-//     top: -.15625em; // -5px
-//     left: -.15625em; // -5px
-// }
-// .btn::after {
-//     top: -.15625em; // -5px
-//     right: -.15625em; // -5px
-// }
-
-// /* Bottom corners */
-// .btn .wrapper::before {
-//     bottom: -.15625em; // -5px
-//     left: -.15625em; // -5px
-// }
-// .btn .wrapper::after {
-//     bottom: -.15625em; // -5px
-//     right: -.15625em; // -5px
-// }
-
 .btn {
     font-size: 1rem;
-    width: 12.5rem;
+    width: 13.5rem;
     float: left;
     margin: 1rem;
     border-left: .3125rem solid $color-white; //or 10px
@@ -109,55 +35,55 @@ button {
         display: block;
         position: relative;
         color: $color-white;
-        padding: 1.25em; // 40px
-        margin: -.3125em 0; // -10px
+        padding: 1.25rem; // 40px
+        margin: -.3125rem 0; // -10px
         border-top: .3125rem solid $color-white; // 10px
         border-bottom: .3125rem solid $color-white; // 10px
 
-        font-family: $font-press-start;
-        font-size: 1em;
+        //font-family: $font-press-start;
+        font-size: 2rem; ///zmienić rozmiar fonta
         text-transform: uppercase;
         text-align: center;
 
         &::before,
         &::after {
             content: '';
-            width: .3125em; // 10px
-            height: .3125em; // 10px
+            width: .3125rem; // 10px
+            height: .3125rem; // 10px
             display: block;
             position: absolute;
             background: $color-white;
         }
 
         &::before {
-            bottom: -.15625em; // -5px
-            left: -.15625em; // -5px
+            bottom: -.15625rem; // -5px
+            left: -.15625rem; // -5px
         }
 
         &::after {
-            bottom: -.15625em; // -5px
-            right: -.15625em; // -5px
+            bottom: -.15625rem; // -5px
+            right: -.15625rem; // -5px
         }
     }
 
     &::before,
     &::after {
         content: '';
-        width: .3125em; // 10px
-        height: .3125em; // 10px
+        width: .3125rem; // 10px
+        height: .3125rem; // 10px
         display: block;
         position: absolute;
         background: $color-white;
     }
 
     &::before {
-        top: -.15625em; // -5px
-        left: -.15625em; // -5px
+        top: -.15625rem; // -5px
+        left: -.15625rem; // -5px
     }
 
     &::after {
-        top: -.15625em; // -5px
-        right: -.15625em; // -5px
+        top: -.15625rem; // -5px
+        right: -.15625rem; // -5px
     }
 }
 
@@ -178,4 +104,76 @@ button {
         background: $color-dark-blue-secondary;
     }
 }
+
+///////////////////////////////////////
+// .btn {
+//     //font-size: 1rem; //zmienić rozmiar fonta
+// 	width: 200px;//12.5rem; //zmienić szerokość
+//     float: left;
+//     margin: 2rem;
+//     border-left: .3125rem solid $color-white; //or 10px
+//     border-right: .3125rem solid $color-white; //or 10px
+//     position: relative;
+// 	background-color: $color-dark-blue-secondary;
+//     &:hover{
+//         box-shadow: 0px 10px 20px 10px rgb(255 255 255 /30%), 2px -10px 20px 10px rgb(255 255 255 /30%);
+//     }   
+// }
+
+// .btn .wrapper {
+//     display: block;
+//     position: relative;
+//     color: $color-white;
+//     /* padding: 1.25em; */
+//     /* margin: -.3125em 0; */
+//     padding: 2.5rem; // 40px zmienić wysokość
+//     margin: -.3125rem 0; // -10px
+//     border-top: .3125rem solid $color-white; // 10px
+//     border-bottom: .3125rem solid $color-white; // 10px
+// 	/* font-family: "Pixelify Sans"; */
+// 	font-size: 28px;//2rem;  //zmień rozmiar fonta
+// 	text-transform: uppercase;
+// 	text-align: center;
+// }
+
+// // .wrapper{
+// // 	//font-family: $font-press-start;
+// // 	font-size: 1rem;
+// // 	text-transform: uppercase;
+// // 	text-align: center;
+// // }
+
+// /* Pseudo-elements for corners */
+// .btn::before,
+// .btn::after,
+// .btn .wrapper::before,
+// .btn .wrapper::after {
+//     content: '';
+//     width: .3125rem; // 10px
+//     height: .3125rem; // 10px
+//     display: block;
+//     position: absolute;
+//     background: $color-white;
+// }
+
+// /* Top corners */
+// .btn::before {
+//     top: -.15625rem; // -5px
+//     left: -.15625rem; // -5px
+// }
+// .btn::after {
+//     top: -.15625rem; // -5px
+//     right: -.15625rem; // -5px
+// }
+
+// /* Bottom corners */
+// .btn .wrapper::before {
+//     bottom: -.15625rem; // -5px
+//     left: -.15625rem; // -5px
+// }
+// .btn .wrapper::after {
+//     bottom: -.15625rem; // -5px
+//     right: -.15625rem; // -5px
+// }
+
 

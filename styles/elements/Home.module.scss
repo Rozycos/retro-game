@@ -1,4 +1,7 @@
 .container {
     background: url('../../public/images/bg1.webp') no-repeat center center fixed;
     background-size: cover;
+    width: 100vw;
+    height: 100vh;
+    max-width: 100%;
 }

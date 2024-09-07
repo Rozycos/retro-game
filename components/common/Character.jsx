@@ -11,4 +11,4 @@ Character.propTypes = {
     character: PropTypes.string.isRequired,
 };
 
-//usage <Character character='ufo'/> accessible characters: scientist, astronaut, ufo, ufo2, alien1, alien2, alien3
+//usage <Character character='ufo'/> accessible characters: scientist, astronaut, ufo, ufo2, alien1, alien2, alien3, arrow

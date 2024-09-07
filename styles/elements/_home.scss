@@ -1,0 +1,19 @@
+.section__button {
+    display: flex;
+    align-items: center;
+    padding: 1rem 0;
+    gap: 1rem;
+    animation: arrow-sway 2s ease infinite;
+}
+
+.section__follow-me {
+    display: flex;
+    // align-items: center;
+    // justify-content: center;
+}
+
+
+@keyframes arrow-sway {
+  from, to { gap: 1rem; }
+  50% { gap: 3rem; }
+}
