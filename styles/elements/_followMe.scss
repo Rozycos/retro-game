@@ -1,0 +1,12 @@
+.main{
+    &__social {
+        &-list {
+            display: flex;
+            flex-direction: row;
+        }
+        &-icon{
+            //color: $color-dark-blue-secondary;
+            color: $color-white;
+        }
+    }
+}
