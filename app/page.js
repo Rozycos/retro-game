@@ -1,9 +1,11 @@
+"use client"
 import Button from '@/components/common/Button';
 import styles from '../styles/elements/Home.module.scss';
 import Character from '@/components/common/Character';
 import Loader from '@/components/common/Loader';
 import Link from 'next/link';
 import SocialButtons from '@/components/common/SocialButtons';
+import GitHubIcon from '@/components/common/SvgIcons/GitHubIcon';
 
 //todo 1. zdefiniować pseudoelementy w h1
 
@@ -29,13 +31,22 @@ export default function Home() {
           <h2>follow me at</h2>
           <ul className='section__follow-me'>
             <li>
-              <a href='https://www.google.com/'><SocialButtons icon='x'/></a>
+              <a href='https://www.google.com/'>    
+                <GitHubIcon/>
+                <style jsx>{`
+                  svg {
+                    
+                  }
+                `}</style>
+</a>
             </li>
             <li>
-              <a href='https://www.google.com/'><SocialButtons icon='linkedin'/></a>
+              <a href='https://www.google.com/'>  <div style={{ color: 'red' }}>
+    <GitHubIcon />
+  </div></a>
             </li>
             <li>
-              <a href='https://www.google.com/'><SocialButtons icon='google'/></a>
+              <a href='https://www.google.com/'><GitHubIcon /></a>
             </li>
           </ul>
         </section>
