@@ -1,9 +1,25 @@
-.section__button {
+
+@keyframes arrow-sway {
+  from, to { gap: 1rem; }
+  50% { gap: 2rem; }
+}
+
+.main {
+  &__section--button {
     display: flex;
     align-items: center;
     padding: 1rem 0;
     gap: 1rem;
     animation: arrow-sway 2s ease infinite;
+  }
+  &__character{
+    &--arrow{
+      @include mobile{
+        display: none;
+      }
+    }
+
+  }
 }
 
 // .section__follow-me {
@@ -17,8 +33,4 @@
 //   margin: 0 auto;
 // }
 
-@keyframes arrow-sway {
-  from, to { gap: 1rem; }
-  50% { gap: 3rem; }
-}
 

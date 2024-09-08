@@ -11,18 +11,18 @@ import FollowMe from '@/components/page-specific/Home/FollowMe';
 export default function Home() {
   return (
     <div className={styles.container}>
-      <header>header</header>
+      <header className='header'>header</header>
       <main className='main'>
         <section className='section__welcome'> 
-          <h1>
+          <h1 className='main__heading'>
             <p className='dual-color-text'>Welcome</p>
             <p className='dual-color-text'>player1</p>
           </h1>
-          <h2>Press play to<br></br> Enter story mode</h2>
+          <h2 className='main__subheading'>Press play to<br></br> Enter story mode</h2>
         </section>
-        <section className='section__button'>
+        <section className='main__section main__section--button'>
           <Button text='start' secondary='true' destinatioPage = '/about-me'/>
-          <div>
+          <div className='main__character main__character--arrow'>
             <Character character='arrow'/>
           </div>
         </section>
@@ -30,26 +30,6 @@ export default function Home() {
           <FollowMe/>
         </section>
       </main>
-      
-      
-
-      {/* <ul>
-        <li><Link href="/about-me">About me</Link></li>
-        <li><Link href="/skills">Skills</Link></li>
-        <li><Link href="/projects">Projects</Link></li>
-        <li><Link href="/experience">Experience</Link></li>
-        <li><Link href="/contact">Contact</Link></li>
-      </ul>
-      <Button text='start' secondary='true' destinatioPage = '/about-me'/>
-      <Character character='ufo2'/>
-      <Character character='ufo1'/>
-      <Character character='ufo'/>
-      <Character character='scientist'/>
-      <Character character='astronaut'/>
-      <Character character='alien1'/>
-      <Character character='alien2'/>
-      <Character character='alien3'/> */}
-
     </div>  
   );
 }
