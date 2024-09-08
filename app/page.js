@@ -3,6 +3,7 @@ import styles from '../styles/elements/Home.module.scss';
 import Character from '@/components/common/Character';
 import Loader from '@/components/common/Loader';
 import Link from 'next/link';
+import SocialButtons from '@/components/common/SocialButtons';
 
 //todo 1. zdefiniować pseudoelementy w h1
 
@@ -27,9 +28,15 @@ export default function Home() {
         <section>
           <h2>follow me at</h2>
           <ul className='section__follow-me'>
-            <li>IKO</li>
-            <li>IKO</li>
-            <li>IKO</li>
+            <li>
+              <a href='https://www.google.com/'><SocialButtons icon='x'/></a>
+            </li>
+            <li>
+              <a href='https://www.google.com/'><SocialButtons icon='linkedin'/></a>
+            </li>
+            <li>
+              <a href='https://www.google.com/'><SocialButtons icon='google'/></a>
+            </li>
           </ul>
         </section>
       </main>

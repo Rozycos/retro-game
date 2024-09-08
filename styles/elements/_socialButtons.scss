@@ -1,0 +1,31 @@
+.social-buttons {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    
+    &__x {
+        width: 50px;
+        height: 50px;
+        //background-image: url(../../public/images/x.svg);
+        background-image: url('data:../../public/images/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" ... ></svg>');
+        color: red; /* Zmienia kolor SVG na czerwony */
+    }
+
+    &__github {
+        width: 50px;
+        height: 50px;
+        background-image: url(../../public/images/github.svg);
+    }
+    
+    &__google {
+        width: 50px;
+        height: 50px;
+        background-image: url(../../public/images/google.svg);
+    }
+    
+    &__linkedin {
+        width: 50px;
+        height: 50px;
+        background-image: url(../../public/images/linkedin.svg);
+    }
+}
