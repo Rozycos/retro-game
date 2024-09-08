@@ -1,14 +1,23 @@
-.main{
+.footer{
+
     &__social {
         &-list {
+            width: 300px;
             display: flex;
-            flex-direction: row;
-            gap: 4rem;
+            justify-content: space-between;
+            // flex-direction: row;
+            // gap: 4rem;
             padding:1rem;
         }
         &-icon{
             //color: $color-dark-blue-secondary;
             color: $color-white;
+            width: 50px;
+            height: 50px;
+            @include mobile{
+                width: 40px;
+                height: 40px;
+            }
         }
     }
 }

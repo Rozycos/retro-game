@@ -5,9 +5,25 @@
 
 body {
     font-family: $font-press-start;
- }
+}
 
-// .main {
+// header{
+
+// }
+
+// footer {
+//     position:absolute;
+//     bottom: 0px;
+// }
+
+.container {
+    max-width: 75rem;
+    margin: 0 auto;
+    padding: 0 1rem;
+  }
+
+
+ // .main {
 //     display:flex;
 //     flex-direction: column;
 //     flex-wrap: wrap ;
