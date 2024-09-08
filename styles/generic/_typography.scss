@@ -6,6 +6,7 @@
     background-clip: text; 
     color: transparent;
     text-shadow: none;
+    &__shadow{
     &::after{
         content: "welcome";
         display: block;
@@ -42,6 +43,46 @@
             left: 1px;
         }
       }  
+    }
+    
+    
+    
+    // &::after{
+    //     content: "welcome";
+    //     display: block;
+    //     position:absolute;
+    //     color: $color-black;
+    //     padding: 1rem;
+    //     //text-shadow: none;
+    //     text-shadow: 1px 1px 2px $color-black;
+    //     top: 1rem;
+    //     left: 1px;
+    //     z-index: -1;
+    //     @include mobile{
+    //         font-size: 2rem;
+    //         padding: 8px;
+    //         top: 1rem;
+    //         left: 1px;
+    //     }
+    //   }
+    // &::before{
+    //     content: "player1";
+    //     display: block;
+    //     position:absolute;
+    //     color: $color-black;
+    //     padding: 1rem;
+    //     //text-shadow: none;
+    //     text-shadow: 1px 1px 2px $color-black;
+    //     top: 7rem;
+    //     left: 1px;
+    //     z-index: -1;
+    //     @include mobile{
+    //         font-size: 2rem;
+    //         padding: 8px;
+    //         top: 4rem;
+    //         left: 1px;
+    //     }
+    //   }  
 
 }
 
