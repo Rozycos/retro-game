@@ -1,4 +1,4 @@
-.footer{
+.homepage{
 
     &__social {
         &-list {
@@ -8,6 +8,9 @@
             // flex-direction: row;
             // gap: 4rem;
             padding:1rem;
+            @include mobile {
+                padding: 0 .5rem 1rem
+            }
         }
         &-icon{
             //color: $color-dark-blue-secondary;

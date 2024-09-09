@@ -15,4 +15,10 @@
       @content;
     }
   }
+
+  @mixin mobile-horizontal {
+    @media (max-height:800px) {
+      @content;
+    }
+  }
   

@@ -3,32 +3,63 @@
   50% { gap: 2rem; }
 }
 
-.main {
-  &__heading{
-    margin:2rem 0 ;
-}
+.homepage {
+
   &__section--button {
     display: flex;
     align-items: center;
-    padding: 1rem 0;
+    padding: 1rem;
     gap: 1rem;
     animation: arrow-sway 2s ease infinite;
+    @include mobile {
+      padding: 0 .5rem 1rem;
+  }
   }
   &__character{
     &--display{
       @include mobile{
         display: none;
+      } 
+    }
+  }
+  &__text--shadow{
+    &::after{
+      content: "welcome";
+      display: block;
+      position:absolute;
+      color: $color-black;
+      padding: 1rem;
+      //text-shadow: none;
+      text-shadow: 1px 1px 2px $color-black;
+      top: 1rem;
+      left: 1px;
+      z-index: -1;
+      @include mobile{
+          font-size: 2rem;
+          padding: 8px;
+          top: 1rem;
+          left: 1px;
       }
     }
-
+  &::before{
+      content: "player1";
+      display: block;
+      position:absolute;
+      color: $color-black;
+      padding: 1rem;
+      //text-shadow: none;
+      text-shadow: 1px 1px 2px $color-black;
+      top: 7rem;
+      left: 1px;
+      z-index: -1;
+      @include mobile{
+          font-size: 2rem;
+          padding: 8px;
+          top: 4rem;
+          left: 1px;
+      }
+    } 
   }
 }
-
-.footer{
-  &__section{
-    margin-top: 4rem;
-  }
-}
-
 
 

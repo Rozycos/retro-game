@@ -6,75 +6,53 @@ import Character from '@/components/common/Character';
 //import SocialButtons from '@/components/common/SocialButtons';
 import FollowMe from '@/components/page-specific/Home/FollowMe';
 
-//todo 1. zdefiniować pseudoelementy w h1
-
 export default function Home() {
   return (
     <div className={styles.container}>
-      <header className='header'>header</header>
-      <main className='main'>
-        <section className='container section__welcome'> 
-          <h1 className='main__heading'>
-            <p className='dual-color-text dual-color-text__shadow'>Welcome</p>
-            <p className='dual-color-text dual-color-text--shadow'>player1</p>
+      <header className='homepage__header'></header>
+      <main className='homepage__main'>
+        <section className='container'> 
+          <h1>
+            <p className='dual-color-text homepage__text--shadow'>Welcome</p>
+            <p className='dual-color-text'>player1</p>
           </h1>
-          <h2 className='main__subheading'>Press play to<br></br> Enter story mode</h2>
+          <h2>Press play to<br></br> Enter story mode</h2>
         </section>
-        <section className='container main__section main__section--button'>
+        <section className='container homepage__section--button'>
           <Button text='start' secondary='true' destinatioPage = '/about-me'/>
-          <div className='main__character main__character--display'>
+          <div className='homepage__character homepage__character--display'>
             <Character character='arrow'/>
           </div>
         </section>
-
-      </main>
-      <footer className='footer'>
-        <section className='container footer__section footer__section--social'>
+        <section className='container'>
           <FollowMe/>
         </section>
-      </footer>
+      </main>
+      <footer className='homepage__footer'></footer>
     </div>  
   );
 }
 // to są propozycje nazwy klas
-/* <main className='main'>
-  <section className='main__section main__section--welcome'> 
-    <h1 className='main__heading'>
-      <p className='main__text main__text--dual-color'>Welcome</p>
-      <p className='main__text main__text--dual-color'>player1</p>
-    </h1>
-    <h2 className='main__subheading'>Press play to<br /> Enter story mode</h2>
-  </section>
-  <section className='main__section main__section--button'>
-    <Button text='start' secondary='true' destinatioPage = '/about-me'/>
-    <div className='main__character'>
-      <Character character='arrow'/>
-    </div>
-  </section>
-  <section className='main__section main__section--social'>
-    <h2 className='main__subheading'>follow me at</h2>
-    <ul className='main__social-list'>
-      <li className='main__social-item'>
-        <a href='https://www.google.com/' className='main__social-link'>
-          <div className='main__social-icon' style={{ color: 'white' }}>
-            <XIcon/>
-          </div>
-        </a>
-      </li>
-      <li className='main__social-item'>
-        <a href='https://www.google.com/' className='main__social-link'>
-          <div className='main__social-icon' style={{ color: 'red' }}>
-            <GitHubIcon/>
-          </div>
-        </a>
-      </li>
-      <li className='main__social-item'>
-        <a href='https://www.google.com/' className='main__social-link'>
-          <div className='main__social-icon' style={{ color: 'red' }}>
-            <LinkedInIcon/>
-          </div>
-        </a>
-      </li>
-    </ul>
-  </section>
-</main> */
+/* <div className={styles.container}>
+  <header className='homepage__header'></header>
+  <main className='homepage__main'>
+    <section className='homepage__section homepage__section--welcome'> 
+      <h1 className='homepage__heading'>
+        <p className='homepage__text homepage__text--dual-color homepage__text--shadow'>Welcome</p>
+        <p className='homepage__text homepage__text--dual-color homepage__text--shadow'>player1</p>
+      </h1>
+      <h2 className='homepage__subheading'>Press play to<br>Enter story mode</h2>
+    </section>
+    <section className='homepage__section homepage__section--button'>
+      <Button text='start' secondary='true' destinationPage='/about-me'/>
+      <div className='homepage__character homepage__character--display'>
+        <Character character='arrow'/>
+      </div>
+    </section>
+    <section className='homepage__section homepage__section--social'>
+      <FollowMe/>
+    </section>
+  </main>
+  <footer className='homepage__footer'></footer>
+</div>
+ */
