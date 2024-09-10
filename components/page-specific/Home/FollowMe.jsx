@@ -8,24 +8,24 @@ export default function FollowMe () {
     return(
         <>
             <h2>follow me at</h2>
-            <ul className='homepage__social-list'>
+            <ul className='social--list'>
                 <li>
-                    <a href='https://www.google.com/'>
-                        <div className='homepage__social-icon'>
+                    <a href='https://github.com/' target='_blank' rel='noopener noreferrer'>
+                        <div className='social--icon'>
                             <GitHubIcon/>
                         </div>
                     </a>
                 </li>
                 <li>
-                    <a href='https://www.google.com/'>
-                        <div className='homepage__social-icon'>
+                    <a href='https://linkedin.com/' target='_blank' rel='noopener noreferrer'>
+                        <div className='social--icon'>
                             <LinkedInIcon/>
                         </div>
                     </a>
                 </li>
                 <li>
-                    <a href='https://www.google.com/'>
-                        <div className='homepage__social-icon'>
+                    <a href='https://x.com/' target='_blank' rel='noopener noreferrer'>
+                        <div className='social--icon'>
                             <XIcon/>
                         </div>
                     </a>

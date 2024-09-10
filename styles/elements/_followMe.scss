@@ -1,7 +1,6 @@
-.homepage{
 
-    &__social {
-        &-list {
+    .social {
+        &--list {
             width: 300px;
             display: flex;
             justify-content: space-between;
@@ -12,7 +11,7 @@
                 padding: 0 .5rem 1rem
             }
         }
-        &-icon{
+        &--icon{
             //color: $color-dark-blue-secondary;
             color: $color-white;
             width: 50px;
@@ -23,4 +22,3 @@
             }
         }
     }
-}
