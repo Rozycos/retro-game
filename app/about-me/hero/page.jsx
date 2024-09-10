@@ -5,7 +5,7 @@ export default function Hero() {
         <div className={styles.container}>
             <header></header>
             <main><h2>Hero!!!</h2></main>
-            <footer></footer>
+            <footer className="footer"></footer>
         </div>
     );
 } 

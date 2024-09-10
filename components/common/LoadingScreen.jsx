@@ -2,7 +2,7 @@
 import { useState, useEffect } from "react";
 import PropTypes from 'prop-types';
 
-export default function Loader({dots=1, time=100, initialText='loading', finalText='done!'}) {
+export default function LoadingScreen({dots=1, time=100, initialText='loading', finalText='done!'}) {
     const [dotCount, setDotCount] = useState(0);
     const [loadingText, setLoadingText] = useState(initialText);
     const [loadingDots, setLoadingDots] = useState('.')
@@ -31,7 +31,7 @@ export default function Loader({dots=1, time=100, initialText='loading', finalTe
 }
 
 // Walidacja typów właściwości
-Loader.propTypes = {
+LoadingScreen.propTypes = {
     dots: PropTypes.number.isRequired,
     time: PropTypes.number.isRequired,
     initialText: PropTypes.string.isRequired,
