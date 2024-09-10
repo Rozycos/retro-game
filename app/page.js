@@ -19,7 +19,7 @@ export default function Home() {
           <h2>Press play to<br></br> Enter story mode</h2>
         </section>
         <section className='container homepage__section--button'>
-          <Button text='start' secondary='true' destinatioPage = '/about-me'/>
+          <Button text='start' secondary='true' destinationPage = '/about-me'/>
           <div className='homepage__character homepage__character--display'>
             <Character character='arrow'/>
           </div>

@@ -26,6 +26,8 @@ button {
     border-right: .3125rem solid $color-white; //or 10px
     position: relative;
     background-color: $color-dark-blue-secondary;
+    text-decoration: none;
+    cursor: pointer;
     @include mobile{
         font-size: 1rem;
         width: 12.5rem;

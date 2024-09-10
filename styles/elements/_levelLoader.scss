@@ -11,7 +11,7 @@
     // background-repeat: no-repeat;
     // background-position: center;
     // background-size: cover;
-    &__title{
+    &__heading{
         font-size: 4rem;
         text-transform: uppercase;
         padding: 1rem;
@@ -19,6 +19,10 @@
             font-size:  1.4rem;
         }
         //margin: 1rem 1rem 3rem;
+    }
+
+    &__subheading {
+        text-align: center;
     }
 
     &__container{
