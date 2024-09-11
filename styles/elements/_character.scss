@@ -1,3 +1,16 @@
+@keyframes waving {
+    0%, 100% {
+        transform: skew(1deg, 1deg);
+    }
+    25%, 75% {
+        transform: skew(0);
+    }
+
+    50% {
+        transform: skew(-.5deg, -0.5deg);
+    }
+  }
+
 .character {
     background-repeat: no-repeat;
     background-position: center;
@@ -22,11 +35,15 @@
         width: 108px;
         height: 297px;
         background-image: url(../../public/images/scientist.png);
+        animation: waving 5s ease-in infinite;
+        animation-direction: alternate;
     }
     &__astronaut {
         width: 106px;
         height: 295px;
         background-image: url(../../public/images/astronaut.png);
+        animation: waving 5s ease-in infinite;
+        animation-direction: alternate-reverse;
     }
     &__ufo {
         width: 197px;
