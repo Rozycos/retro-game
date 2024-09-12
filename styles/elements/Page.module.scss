@@ -1,19 +1,21 @@
+@import '../settings/colors';
+@import '../settings/mixins';
+
+.container {
+    background: url('../../public/images/bg3.webp') no-repeat center center fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100vw;
+    min-height: 100vh;
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
 .page{
-    &__main {
-        display: flex;
-        justify-content:center;
-        align-items:center;
-        flex-direction: column;
-        //height: 420px;
-    }
     &__text{
-        position: relative;
-        font-size: 2.5rem;
-        @include mobile{
-            font-size: 1rem;
-        }
         &--shadow{
-        
             &::after{
                 //content: "i'm przemek malec";
                 content: attr(data-text);;
@@ -34,21 +36,5 @@
                 }
             }
         }
-    }
-
-    &__wrapper{
-        display: flex;
-        flex-direction: row;
-        //height: 420px;
-
-    }
-
-    &__section--information{
-        display: flex;
-        flex-direction: column;
-        justify-content:center;
-        align-items:center;
-        height: 300px;
-
     }
 }

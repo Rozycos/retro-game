@@ -1,5 +1,5 @@
 import TimedComponentSwitcher from "@/components/common/TimedComponentSwitcher";
-import styles from "../../styles/elements/AboutMe.module.scss";
+import styles from "../../styles/elements/Page.module.scss";
 import AboutMe from "@/components/page-specific/AboutMe/AboutMe";
 import LoadingScreen from "@/components/common/LoadingScreen";
 

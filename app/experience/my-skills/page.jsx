@@ -2,13 +2,13 @@ import Character from "@/components/common/Character";
 import styles from "../../../styles/elements/Page.module.scss";
 import Heading from "@/components/common/Heading";
 
-export default function Hero() {
+export default function MySkills() {
     return (
         <div className={styles.container}>
             <header></header>
             <main className="page__main">
                 <section>
-                    <Heading text="I'm Przemek Malec"/>
+                    <Heading text='Character Skills'/>
                 </section>
                 <section className="page__section--information">
                     <div className="page__wrapper">
@@ -23,5 +23,3 @@ export default function Hero() {
         </div>
     );
 } 
-
-//<h1></h1> zrobić jako heading h2 jako subheading
