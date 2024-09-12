@@ -12,28 +12,28 @@
         @include mobile{
             font-size: 1rem;
         }
-        &--shadow{
+        // &--shadow{
         
-            &::after{
-                //content: "i'm przemek malec";
-                content: attr(data-text);;
-                display: block;
-                position:absolute;
-                color: $color-black;
-                //padding: 1rem;
-                //text-shadow: none;
-                text-shadow: 1px 1px 2px $color-black;
-                top: 1rem;
-                //left: 1px;
-                z-index: -1;
-                @include mobile{
-                    font-size: 1rem;
-                    //padding: 8px;
-                    top: .5rem;
-                    //left: 1px;
-                }
-            }
-        }
+        //     &::after{
+        //         //content: "i'm przemek malec";
+        //         content: attr(data-text);;
+        //         display: block;
+        //         position:absolute;
+        //         color: $color-black;
+        //         //padding: 1rem;
+        //         //text-shadow: none;
+        //         text-shadow: 1px 1px 2px $color-black;
+        //         top: 1rem;
+        //         //left: 1px;
+        //         z-index: -1;
+        //         @include mobile{
+        //             font-size: 1rem;
+        //             //padding: 8px;
+        //             top: .5rem;
+        //             //left: 1px;
+        //         }
+        //     }
+        // }
     }
 
     &__wrapper{

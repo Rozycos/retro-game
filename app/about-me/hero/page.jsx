@@ -1,8 +1,11 @@
 import Character from "@/components/common/Character";
 import styles from "../../../styles/elements/Page.module.scss";
 import Heading from "@/components/common/Heading";
+import TypingText from "@/components/common/TypingText";
 
 export default function Hero() {
+    const HeroSectionText = `I am a third year undergrad student studying in SOME Institute of Technology, SOMEWHERE. I am from the City of Joy, CITYNAME. I completed my +2 from SOME SCHOOL.`
+
     return (
         <div className={styles.container}>
             <header></header>
@@ -13,7 +16,9 @@ export default function Hero() {
                 <section className="page__section--information">
                     <div className="page__wrapper">
                         <div className="page_image">obrazek</div>
-                        <div className="page__information">text</div>
+                        <div className="page__information">
+                            <TypingText text={HeroSectionText} typingSpeed={20}/>
+                        </div>
                     </div>
                 </section>
                 {/* <Character character="scientist"/>
