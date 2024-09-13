@@ -13,7 +13,7 @@ export default function AstronautImageLink (){
   return (
     <div className="image-link" onClick={handleClick}>
       <div className="image-link__bubble">
-        click me to enter next level
+        <span className="image-link__bubble-text">click me to enter next level</span>
       </div>
       <Character character="astronaut"/>
     </div>
