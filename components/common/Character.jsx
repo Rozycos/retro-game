@@ -1,8 +1,8 @@
 import PropTypes from 'prop-types';
 
-export default function Character({character='alien1'}) {
+export default function Character({character='alien1', text=''}) {
     return (
-    <div className={`character character__${character}`}></div>
+    <div className={`character character__${character}`}>{text}</div>
     )
 }
 

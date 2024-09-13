@@ -66,6 +66,12 @@
         height: 29px;
         background-image: url(../../public/images/arrow.png);
     }
+
+    &__bubble {
+        width: 201px;
+        height: 129px;
+        background-image: url(../../public/images/cloud.png);
+    }
 }
 
 //usage <Character character='ufo'/> accessible characters: scientist, astronaut, ufo, ufo2, alien1, alien2, alien3

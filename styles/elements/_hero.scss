@@ -5,6 +5,7 @@
         align-items:center;
         flex-direction: column;
         //height: 420px;
+        
     }
     &__text{
         position: relative;
@@ -40,15 +41,25 @@
         display: flex;
         flex-direction: row;
         //height: 420px;
+        @include mobile{
+            flex-direction: column;
+        }
 
     }
 
-    &__section--information{
-        display: flex;
-        flex-direction: column;
-        justify-content:center;
-        align-items:center;
-        height: 300px;
+    &__section{
+        &--information{
+            display: flex;
+            flex-direction: column;
+            justify-content:center;
+            align-items:center;
+            height: 300px;
 
-    }
+        }
+        &--image-link{
+            position: absolute;
+            bottom: 5%;
+            right: 10%;
+        }
+    }    
 }
