@@ -1,0 +1,86 @@
+// @import '../settings/colors';
+// @import '../settings/mixins';
+
+.page{
+    &__main {
+        display: flex;
+        justify-content:center;
+        align-items:center;
+        flex-direction: column;
+        //height: 420px;
+        
+    }
+    &__text{
+        position: relative;
+        font-size: 2.5rem;
+        @include mobile{
+            font-size: 1rem;
+        }
+     }
+
+    &__wrapper{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content:flex-end;
+        height: 420px;
+        @include mobile{
+            flex-direction: column;
+            width: 300px;
+        }
+
+    }
+
+    &__section{
+        &--information{
+            display: flex;
+            flex-direction: column;
+            justify-content:center;
+            align-items:center;
+            min-height: 300px;
+
+
+        }
+
+    }    
+    &__image{
+        background-image: url(../../public/images/ufo2.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+        // max-width: 380px;
+        // max-height: 420px;
+        // min-width: 100px;
+        // min-height: 200px;
+        width: 300px;
+        height: 400px;
+        display: flex;
+        justify-content: center;
+        align-items: center ;
+        //margin: 0 auto;
+        // &-link{
+        // position: absolute;
+        // bottom: 5%;
+        // right: 10%;
+        // }
+    }
+    &__information{
+        width:560px;
+        max-height: 300px;
+        line-height: 2rem;
+        @include tablet {
+            width:60%;
+        }
+        @include mobile{
+            width:80%;
+        }
+
+    }
+
+    &__hero{
+        background-image: url(../../public/images/hero.png);
+        width:25px;
+        height: 25px;
+        z-index: 2;
+    }
+}
