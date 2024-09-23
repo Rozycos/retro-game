@@ -9,7 +9,7 @@ export default function AboutMe () {
 
     return(            
         <>
-            <LevelLoader link='/about-me/hero' linkName='level 1' level='level 2' levelName='explore my skills' destinationPage = '/experience/my-skills'/>
+            <LevelLoader link='/about-me' linkName='level 1' level='level 2' levelName='explore my skills' destinationPage = '/experience/my-skills'/>
         </>
     )
 }
