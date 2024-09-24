@@ -1,12 +1,12 @@
 .image-link {
     position:absolute;
-    bottom: 10%;
+    bottom: 13%;
     right: 0;
     display: flex;
     flex-direction: column;
     align-items: center;
     cursor: pointer;
-    max-height: 300px;
+    max-height: 12.5rem;
     @include mobile{
         position:relative;
         bottom: -30px;
@@ -26,14 +26,14 @@
         background-repeat: no-repeat;
         background-position: center;
         background-size: contain;
-        width: 150px;
-        height: 130px;
+        width: 9.375rem;
+        height: 8.125rem;
         background-image: url(../../public/images/cloud.png);
 
         &-text{
             display: inline-block;
             text-align: center;
-            width: 130px;
+            width: 8.125rem;
             line-height: 1rem;
 
         }
