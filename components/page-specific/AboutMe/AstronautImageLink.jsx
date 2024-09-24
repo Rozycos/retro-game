@@ -7,7 +7,7 @@ export default function AstronautImageLink (){
   const router = useRouter();
 
   const handleClick = () => {
-    router.push('/experience');
+    router.push('/skills');
   };
 
   return (
