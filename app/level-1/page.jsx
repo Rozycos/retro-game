@@ -3,7 +3,7 @@ import styles from "../../styles/elements/Page.module.scss";
 import AboutMe from "@/components/page-specific/AboutMe/AboutMe";
 import LoadingScreen from "@/components/common/LoadingScreen";
 
-export default function AboutMePage() {
+export default function Level1() {
     return (
         <div className={styles.container}>
             <TimedComponentSwitcher 

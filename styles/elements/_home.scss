@@ -24,7 +24,7 @@
   }
   &__text--shadow{
     &::after{
-      content: "welcome";
+      content: "Welcome";
       display: block;
       position:absolute;
       color: $color-black;

@@ -4,12 +4,12 @@ import Button from "@/components/common/Button"
 import LevelLoader from "@/components/common/LevelLoader"
 import Link from "next/link"
 
-export default function AboutMe () {
+export default function Level3 () {
     //const [showDone, setShowDone] = useState(false);
 
     return(            
         <>
-            <LevelLoader link='/about-me' linkName='level 1' level='level 2' levelName='explore my skills' destinationPage = '/experience/my-skills'/>
+            <LevelLoader link='/level-2' linkName='level 2' level='level 3' levelName='my experience' destinationPage = '/level-3/my-experience'/>
         </>
     )
 }
