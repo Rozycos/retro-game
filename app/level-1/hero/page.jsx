@@ -21,7 +21,7 @@ export default function HeroPage() {
                     <Hero/>
                 </section>
                 {/* <Character character="scientist"/> */}
-                <AstronautImageLink/>
+                {/* <AstronautImageLink/> */}
 
             </main>
             <footer className="footer">

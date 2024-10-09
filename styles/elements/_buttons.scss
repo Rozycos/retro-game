@@ -19,7 +19,7 @@ button {
 
 .btn {
     font-size: 1rem;
-    width: 13.5rem;
+    min-width: 13.5rem;
     float: left;
     margin: 1rem;
     border-left: .3125rem solid $color-white; //or 10px

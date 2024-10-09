@@ -32,6 +32,7 @@ export default function Hero () {
                 </div>
                 <div className="hero__description">
                     <TypingText text={HeroSectionText} typingSpeed={20}/>
+                    <Button text='next level' secondary={false} destinationPage='/level-2'/> 
                     {/* <Link className="" href="/">next level</Link> */}
                     {/* <Button text='next level' secondary={false}destinationPage='/'/> */}
                 </div>
@@ -39,3 +40,5 @@ export default function Hero () {
         </>
     )
 }
+
+//usage <Button text='start' secondary='true/false' destinationPage='/'/>
