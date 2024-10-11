@@ -1,4 +1,5 @@
 import Button from "@/components/common/Button";
+import Character from "@/components/common/Character/Character";
 import TypingText from "@/components/common/TypingText";
 import Link from "next/link";
 //import Image from "next/image";
@@ -32,9 +33,11 @@ export default function Hero () {
                 </div>
                 <div className="hero__description">
                     <TypingText text={HeroSectionText} typingSpeed={20}/>
-                    <Button text='next level' secondary={false} destinationPage='/level-2'/> 
+                    
+                    <Button text='next level' secondary={true} destinationPage='/level-2'/> 
                     {/* <Link className="" href="/">next level</Link> */}
                     {/* <Button text='next level' secondary={false}destinationPage='/'/> */}
+                    
                 </div>
             </div>
         </>

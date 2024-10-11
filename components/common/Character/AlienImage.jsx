@@ -3,7 +3,7 @@ import { useRouter } from 'next/navigation';
 import Image from 'next/image';
 import Character from '@/components/common/Character/Character';
 
-export default function AstronautImageLink (){
+export default function AlienImage (){
   const router = useRouter();
 
   const handleClick = () => {

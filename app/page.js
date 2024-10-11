@@ -1,13 +1,16 @@
 import Button from '@/components/common/Button';
 import styles from '../styles/elements/Home.module.scss';
-import Character from '@/components/common/Character';
+import Character from '@/components/common/Character/Character';
 //import Loader from '@/components/common/Loader';
 //import Link from 'next/link';
 //import SocialButtons from '@/components/common/SocialButtons';
 import FollowMe from '@/components/page-specific/Home/FollowMe';
+import Home from '@/components/page-specific/Home/Home';
 
-export default function Home() {
+export default function HomePage() {
   return (
+
+    // <Home/>
     <div className={styles.container}>
       <header className='homepage__header'></header>
       <main className='homepage__main'>

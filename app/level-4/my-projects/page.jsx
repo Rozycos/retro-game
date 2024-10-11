@@ -1,4 +1,4 @@
-import Character from "@/components/common/Character";
+import Character from "@/components/common/Character/Character";
 import styles from "../../../styles/elements/Page.module.scss";
 import Heading from "@/components/common/Heading";
 import Button from "@/components/common/Button";

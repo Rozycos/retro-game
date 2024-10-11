@@ -1,10 +1,11 @@
-import Character from "@/components/common/Character";
+import Character from "@/components/common/Character/Character";
 import styles from "../../../styles/elements/Page.module.scss";
 import Heading from "@/components/common/Heading";
 import TypingText from "@/components/common/TypingText";
 import AstronautImageLink from "@/components/page-specific/AboutMe/AstronautImageLink";
 import Image from "next/image";
 import Hero from "@/components/page-specific/AboutMe/Hero";
+import Level1Game from "@/components/page-specific/AboutMe/Level1Game";
 
 export default function HeroPage() {
     
@@ -18,7 +19,8 @@ export default function HeroPage() {
                 </section>
                 {/* <section className="page__section--main"> */}
                 <section>
-                    <Hero/>
+                    {/* <Hero/> */}
+                    <Level1Game/>
                 </section>
                 {/* <Character character="scientist"/> */}
                 {/* <AstronautImageLink/> */}

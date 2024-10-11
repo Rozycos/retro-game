@@ -7,10 +7,10 @@ export default function Level1() {
     return (
         <div className={styles.container}>
             <TimedComponentSwitcher 
-                switchTime={1100}
+                switchTime={700}
                 FirstComponent={LoadingScreen} 
                 SecondComponent={AboutMe} 
-                firstComponentProps={{dots:18, time:50, initialText:'Initializing world', finalText:'Done'}} 
+                firstComponentProps={{dots:18, time:30, initialText:'Initializing world', finalText:'Done'}} 
                 secondComponentProps={''} 
             />
         </div>
