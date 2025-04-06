@@ -10,29 +10,29 @@ import Home from '@/components/page-specific/Home/Home';
 export default function HomePage() {
   return (
 
-    // <Home/>
-    <div className={styles.container}>
-      <header className='homepage__header'></header>
-      <main className='homepage__main'>
-        <section className='container'> 
-          <h1>
-            <p className='dual-color-text homepage__text--shadow'>Welcome</p>
-            <p className='dual-color-text'>player1</p>
-          </h1>
-          <h2>Press play to<br></br> Enter story mode</h2>
-        </section>
-        <section className='container homepage__section--button'>
-          <Button text='start' secondary='true' destinationPage = '/level-1'/>
-          <div className='homepage__character homepage__character--display'>
-            <Character character='arrow'/>
-          </div>
-        </section>
-        <section className='container'>
-          <FollowMe/>
-        </section>
-      </main>
-      <footer className='homepage__footer'></footer>
-    </div>  
+     <Home/>
+    // <div className={styles.container}>
+    //   <header className='homepage__header'></header>
+    //   <main className='homepage__main'>
+    //     <section className='container'> 
+    //       <h1>
+    //         <p className='dual-color-text homepage__text--shadow'>Welcome</p>
+    //         <p className='dual-color-text'>player1</p>
+    //       </h1>
+    //       <h2>Press play to<br></br> Enter story mode</h2>
+    //     </section>
+    //     <section className='container homepage__section--button'>
+    //       <Button text='start' secondary='true' destinationPage = '/level-1'/>
+    //       <div className='homepage__character homepage__character--display'>
+    //         <Character character='arrow'/>
+    //       </div>
+    //     </section>
+    //     <section className='container'>
+    //       <FollowMe/>
+    //     </section>
+    //   </main>
+    //   <footer className='homepage__footer'></footer>
+    // </div>  
   );
 }
 // to są propozycje nazwy klas

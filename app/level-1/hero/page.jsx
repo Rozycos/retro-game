@@ -6,6 +6,7 @@ import AstronautImageLink from "@/components/page-specific/AboutMe/AstronautImag
 import Image from "next/image";
 import Hero from "@/components/page-specific/AboutMe/Hero";
 import Level1Game from "@/components/page-specific/AboutMe/Level1Game";
+import Button from "@/components/common/Button";
 
 export default function HeroPage() {
     
@@ -21,13 +22,14 @@ export default function HeroPage() {
                 <section>
                     {/* <Hero/> */}
                     <Level1Game/>
+                    <Button text='level 2' secondary='false' destinationPage='/level-2'/>
                 </section>
                 {/* <Character character="scientist"/> */}
                 {/* <AstronautImageLink/> */}
 
             </main>
             <footer className="footer">
-            {/* <AstronautImageLink/> */}
+            <AstronautImageLink/>
             </footer>
         </div>
     );
